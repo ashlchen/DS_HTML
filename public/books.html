@@ -114,47 +114,32 @@
           
               </table>
             
-              <p>Please complete the form below to tell us about yourself and your role as a student with the University.</p>
+              <p>Please complete the form below to add more books</p>
         
-       <form action ="confirmation.html" method="POST">
+       <form action ="index.html" method="POST">
 
        <!-- <!-label is super useful for mobile device because it hightlights the textbox when you click on the label -  --> 
-        <label for ="firstname">First Name</label> <input type ="text" name="firstname" id="firstname">
+        <label for ="firstname">Book Title</label> <input type ="text" name="firstname" id="firstname">
         <br>
        
-        Last Name <input type ="text" name= "lastname" id="lastname">
+        Author <input type ="text" name= "lastname" id="lastname">
         <br>
 
         <!-- give both radio the same name to make the user choose only 1 option -->
         <!-- but we can't give them the same ID -->
-        Degree Level 
-        <input type= "radio" name="degreelevel" id="undergrad" value="undergrad"> 
-        <label for="undergrad">Undergrad </label> 
-        <input type="radio" name="degreelevel" id="graduate" value="graduate"> 
-        <label for ="graduate"> Graduate </label><br>
+        Year Published <input type ="text">
+        <br>  
 
-
-        Interests <br>
-         <input type="checkbox" name="club" id="club" value="True">Club <br>
-         <input type="checkbox">Performances <br>
-         <input type="checkbox">Sports <br>
+        Publisher <input type ="text" name= "lastname" id="lastname">
+        <br>
+     
 
         
-        Major
-        <select name="major" id="major">
-          <!-- don't give id to options because they already have possible values -->
-          <option></option>
-          <option value= "Acct">Accounting</option>
-          <option value= "Fin">Finance</option>
-          <option value= "IS">Information Systems</option>
-          <option value= "Mkt">Marketing</option>
-          <option value= "OPS">Operations</option>
-        </select><br>
-
+        Page Count <input type ="text" name= "lastname" id="lastname">
+        <br>
         
-        Comments <br>
-        <textarea name= "comments" id="comments"></textarea><br>
-
+        Price <input type ="text" name= "lastname" id="lastname">
+        <br>
 
         <input class="button" type="submit" name="submit" id="summit" value ="Submit Form"> 
 
