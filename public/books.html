@@ -55,9 +55,117 @@
           <div class="demo col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <!-- <img src="images/download.jpg" alt="back_image" class="demo1"> -->
           <div class="demo2">
-            <h3>
-              About Rachel Green
-            </h3>
+            
+              <h1>Tables</h1>
+              <table class="table table-bordered table-striped table-hover table-condensed ">
+                <thead>
+                  <tr>
+                    <th>Title</th>
+                    <th>Author</th> 
+                    <th>Year Published</th>
+                    <th>Publisher</th>
+                    <th>Page Count</th>
+                    <th>MSRP</th>
+                  </tr>
+                </thead>
+          
+                <tbody>
+                  <tr>
+                    <td>Being Mortal</td>	
+                    <td>Atul Gawande	</td>
+                    <td>2014</td>
+                    <td>Metropolitan Books</td>
+                    <td>304</td>
+                    <td>$10.39</td>
+                  </tr>
+          
+                  <tr >
+                    <td>The Defining Decade</td>
+                    <td>Meg Jay</td>
+                    <td>2012</td>
+                    <td>Canongate Books</td>
+                    <td>272</td>
+                    <td>$8.75</td>
+                  </tr>
+          
+                  <tr>
+                    <td>The 7 Habbits of Highly Effective People</td>
+                    <td>Stephen Covey</td>
+                    <td>1989</td>
+                    <td>Free Press</td>
+                    <td>381</td>
+                    <td>$12.53</td>
+                  </tr>
+          
+                  <tr>
+                    <td>The Subtle Art of Not Giving a Fu*k</td>
+                    <td>Mark Manson</td>
+                    <td>2016</td>
+                    <td>HarperOne</td>
+                    <td>224</td>
+                    <td>$12.99</td>
+                  </tr>
+          
+                 
+          
+                </tbody>  
+          
+            
+          
+              </table>
+            
+              <p>Please complete the form below to tell us about yourself and your role as a student with the University.</p>
+        
+       <form action ="confirmation.html" method="POST">
+
+       <!-- <!-label is super useful for mobile device because it hightlights the textbox when you click on the label -  --> 
+        <label for ="firstname">First Name</label> <input type ="text" name="firstname" id="firstname">
+        <br>
+       
+        Last Name <input type ="text" name= "lastname" id="lastname">
+        <br>
+
+        <!-- give both radio the same name to make the user choose only 1 option -->
+        <!-- but we can't give them the same ID -->
+        Degree Level 
+        <input type= "radio" name="degreelevel" id="undergrad" value="undergrad"> 
+        <label for="undergrad">Undergrad </label> 
+        <input type="radio" name="degreelevel" id="graduate" value="graduate"> 
+        <label for ="graduate"> Graduate </label><br>
+
+
+        Interests <br>
+         <input type="checkbox" name="club" id="club" value="True">Club <br>
+         <input type="checkbox">Performances <br>
+         <input type="checkbox">Sports <br>
+
+        
+        Major
+        <select name="major" id="major">
+          <!-- don't give id to options because they already have possible values -->
+          <option></option>
+          <option value= "Acct">Accounting</option>
+          <option value= "Fin">Finance</option>
+          <option value= "IS">Information Systems</option>
+          <option value= "Mkt">Marketing</option>
+          <option value= "OPS">Operations</option>
+        </select><br>
+
+        
+        Comments <br>
+        <textarea name= "comments" id="comments"></textarea><br>
+
+
+        <input class="button" type="submit" name="submit" id="summit" value ="Submit Form"> 
+
+        <!-- the button is responsible for triggering submitting the form -->
+
+    
+
+
+
+      </form>
+
             <br>
           </div>
 
