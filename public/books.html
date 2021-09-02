@@ -3,14 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>My Page Title</title>
+    <title>Assignment1</title>
+    
+    <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://code.jquery.com/jquery-3.2.1.js">
 
-	</script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 
-	</script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
@@ -18,34 +24,20 @@
       <div class="container">
         <header class="row ">
           
-            <!-- <div class= "logo col-lg-12 col-md-12 col-sm-12 col-xs-12"> -->
-              <!-- <img src="images/comp_icon.jpg" alt="company_icon" width="50px"> -->
-                <h1><img src="public/img/friends1" alt="friends" width="50px"> About Rachel Green
-                <a href="index.html">
-              
-                </h1>
-                                 
-            <!-- </div>
-             -->               
+        <h1>Books</h1>
            
         </header>
         <nav class="navbar navbar-default row">
-          <div class="navbar-header">
-            <button class="navbar-toggle" data-toggle="collapse" data-target="#MyMenu">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-          </div>
-          <div class="collapse navbar-collapse" id="MyMenu">
-            <ul class="nav navbar-nav">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="AboutMe.html">About Me</a></li>
-              <li><a href="books.html">Books</a></li>
-              
-            </ul>
-          </div>
-        </nav>
+      
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="AboutMe.html">About Me</a></li>
+            <li><a href="books.html">Books</a></li>
+            
+            
+          </ul>
+        
+      </nav>
         
         <main class="row home">
         
@@ -56,10 +48,10 @@
           <!-- <img src="images/download.jpg" alt="back_image" class="demo1"> -->
           <div class="demo2">
             
-              <h1>Tables</h1>
+            
               <table class="table table-bordered table-striped table-hover table-condensed ">
                 <thead>
-                  <tr>
+                  <tr id="title_of_table">
                     <th>Title</th>
                     <th>Author</th> 
                     <th>Year Published</th>
@@ -119,26 +111,30 @@
        <form action ="index.html" method="POST">
 
        <!-- <!-label is super useful for mobile device because it hightlights the textbox when you click on the label -  --> 
-        <label for ="firstname">Book Title</label> <input type ="text" name="firstname" id="firstname">
+        Book Title
+        <br> <input type ="text" name="firstname" id="firstname">
         <br>
        
-        Author <input type ="text" name= "lastname" id="lastname">
+        Author 
+        <br><input type ="text" name= "lastname" id="lastname">
         <br>
 
-        <!-- give both radio the same name to make the user choose only 1 option -->
-        <!-- but we can't give them the same ID -->
-        Year Published <input type ="text">
+        Year Published 
+        <br><input type ="text">
         <br>  
 
-        Publisher <input type ="text" name= "lastname" id="lastname">
+        Publisher
+        <br> <input type ="text" name= "lastname" id="lastname">
         <br>
      
 
         
-        Page Count <input type ="text" name= "lastname" id="lastname">
+        Page Count
+        <br> <input type ="text" name= "lastname" id="lastname">
         <br>
         
-        Price <input type ="text" name= "lastname" id="lastname">
+        Price 
+        <br><input type ="text" name= "lastname" id="lastname">
         <br>
 
         <input class="button" type="submit" name="submit" id="summit" value ="Submit Form"> 
