@@ -7,4 +7,4 @@ LABEL maintainer="Ashley Chen"
 WORKDIR /var/www/html
 
 #Copy our public folder o the working directory
-COPY public .
+COPY 
