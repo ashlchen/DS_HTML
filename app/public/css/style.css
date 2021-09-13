@@ -71,6 +71,8 @@ header{
   
   }
 
+
+  /* CSS for sort table source:http://tristen.ca/tablesort/demo/ */
   th[role=columnheader]:not(.no-sort) {
     cursor: pointer;
   }
