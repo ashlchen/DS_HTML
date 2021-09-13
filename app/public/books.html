@@ -49,7 +49,7 @@
           <div class="demo2">
             
             
-              <table class="table table-bordered table-striped table-hover table-condensed ">
+              <table id="taskTable" class="table table-bordered table-striped table-hover table-condensed ">
                 <thead>
                   <tr id="title_of_table">
                     <th>Title</th>
@@ -105,6 +105,12 @@
             
           
               </table>
+
+              <!-- source:http://tristen.ca/tablesort/demo/ -->
+              <script src='js/tablesort.min.js'></script>
+              <script>
+                new Tablesort(document.getElementById('taskTable'));
+              </script>
             
               <p>Please complete the form below to add more books</p>
         
