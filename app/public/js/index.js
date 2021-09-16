@@ -35,7 +35,7 @@ const Offer = {
             this.person = responseJson.results[0]
             console.log("C");
         })
-        .catch( err => {
+        .catch( (err) => {
             console.error(err)
         })
 
