@@ -4,6 +4,7 @@ const Offer = {
     data() { 
         // pass function (returns an object) (make data lazy and save storage)
       return {
+        "person": {},
         "offer":[
         {
             "id": 1,
