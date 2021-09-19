@@ -44,8 +44,8 @@
         <div id= "offerApp">
               <a v-bind:href="person.picture.thumbnail"><img v-bind:src="person.picture.large" alt = "Stock picture"  width="300"></a><br>
               <p style="font-size: smaller;">Image Source: https://randomuser.me/api/</p>
-              <h3><b>Name {{person.name.first}} {{person.name.last}}</b></h3></br>
-              <h3> Country{{person.location.state}}, {{person.location.country}}</h3>
+              <h3>Name: {{person.name.first}} {{person.name.last}}</h3>
+              <h3> Country: {{person.location.state}}, {{person.location.country}}</h3>
               <h3> Birthday: {{person.dob.date}}</h3>
               <h3>Age: {{person.dob.age}}</h3>
               <h3>Email: <a v-bind:href="'mailto:'+person.email" id = "email">{{person.email}}</a></h3>
