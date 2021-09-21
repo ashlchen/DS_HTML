@@ -25,23 +25,33 @@ const Offer = {
         ]
     }
     },
-     created() {
-        console.log("A");
+    methods: {
+    fetchuserData() {
+      // A
+    fetch('https://randomuser.me/api/') 
+    // fetch the url, a promise object
+    .then(response => response.json() )
+    // put the response (promise object) into json format (json object)
+    .then( (responseJson) => {
+      // another function to print in the function
+      console.log(responseJson);
+      // print in the console
+// C
+      this.person = responseJson.results[0];
+      // random user 1st the result store into person
 
-        fetch('https://randomuser.me/api/')
-        .then(response => response.json())
-        .then((responseJson) => {
-            console.log(responseJson);
-            this.person = responseJson.results[0]
-            console.log("C");
-        })
-        .catch( (err) => {
-            console.error(err)
-        })
 
-        console.log("B");
+    })
+    .catch( (err) => {
+      // otherwise, return error
+      console.error(err);
+    })
+    // B
     }
-  }
-  
+  },
+    created() {
+    this.fetchuserData();
+  }  
+}
   Vue.createApp(Offer).mount('#offerApp')
 //   mount = attach
