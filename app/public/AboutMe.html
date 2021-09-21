@@ -42,6 +42,10 @@
       </nav>
         
         <div id= "offerApp">
+          <form v-on:submit.prevent="fetchuserData">
+            <button type="submit">Refresh</button>
+          </form>
+          
               <a v-bind:href="person.picture.thumbnail"><img v-bind:src="person.picture.large" alt = "Stock picture"  width="300"></a><br>
               <p>Image Source:https://randomuser.me/api/</p>
               <h3>Name: {{person.name.first}} {{person.name.last}}</h3>
