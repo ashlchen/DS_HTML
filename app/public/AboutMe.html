@@ -50,7 +50,7 @@
               <p>Image Source:https://randomuser.me/api/</p>
               <h3>Name: {{person.name.first}} {{person.name.last}}</h3>
               <h3> Country: {{person.location.state}}, {{person.location.country}}</h3>
-              <h3> Birthday: {{person.dob.date}}</h3>
+              <h3> Birthday: {{prettyBirthday}}</h3>
               <h3>Age: {{person.dob.age}}</h3>
               <h3>Email: <a v-bind:href="'mailto:'+person.email" id = "email">{{person.email}}</a></h3>
               
