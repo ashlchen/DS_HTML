@@ -54,6 +54,9 @@
               <h3>Age: {{person.dob.age}}</h3>
               <h3>Email: <a v-bind:href="'mailto:'+person.email" id = "email">{{person.email}}</a></h3>
               
+              
+              <!-- DayJS  use before index.js because js loads in order-->
+              <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
 
               <script src="js/index.js"></script>
          </div>
