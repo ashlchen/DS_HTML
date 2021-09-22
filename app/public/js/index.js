@@ -25,6 +25,13 @@ const Offer = {
         ]
     }
     },
+    computed: {
+    prettyBirthday() {
+      return dayjs(this.person.dob.date).format('D MMM  YYYY')
+
+    }
+
+  },
     methods: {
     fetchuserData() {
       // A
