@@ -1,9 +1,9 @@
 const SomeApp = {
   data() {
     return {
-      students: [],
-      selectedStudent: null,
-      offers: []
+      "students": [],
+      "selectedStudent": null,
+      "offers": []
     }
   },
   computed: {},
